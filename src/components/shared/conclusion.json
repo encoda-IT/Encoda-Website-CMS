@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_conclusions",
+  "info": {
+    "displayName": "Conclusion",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "conclusion_text": {
+      "type": "blocks"
+    }
+  }
+}

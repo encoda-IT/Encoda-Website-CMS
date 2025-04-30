@@ -52,7 +52,8 @@
         "shared.quote",
         "shared.rich-text",
         "shared.slider",
-        "shared.call-to-action"
+        "shared.call-to-action",
+        "shared.conclusion"
       ]
     },
     "related_articles_outgoing": {

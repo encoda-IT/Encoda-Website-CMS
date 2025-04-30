@@ -15,6 +15,18 @@ export interface SharedCallToAction extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedConclusion extends Struct.ComponentSchema {
+  collectionName: 'components_shared_conclusions';
+  info: {
+    description: '';
+    displayName: 'Conclusion';
+    icon: 'check';
+  };
+  attributes: {
+    conclusion_text: Schema.Attribute.Blocks;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -81,6 +93,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.call-to-action': SharedCallToAction;
+      'shared.conclusion': SharedConclusion;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
