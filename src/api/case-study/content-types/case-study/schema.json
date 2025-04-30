@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Case Study",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "executivesummary": {
+      "type": "blocks"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.quote",
+        "shared.rich-text",
+        "shared.media"
+      ]
+    }
+  }
+}
