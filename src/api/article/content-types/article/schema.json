@@ -54,6 +54,18 @@
         "shared.slider",
         "shared.call-to-action"
       ]
+    },
+    "related_articles_outgoing": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "related_articles_incoming"
+    },
+    "related_articles_incoming": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "related_articles_outgoing"
     }
   }
 }
